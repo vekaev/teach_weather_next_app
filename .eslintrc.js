@@ -79,5 +79,12 @@ module.exports = {
       'error',
       { devDependencies: ['**/*.test.tsx', '**/*.test.ts'] },
     ],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state'],
+      },
+    ],
   },
 };
